@@ -2,13 +2,13 @@ This tutorial is for console applications created using Visual Studio on Windows
 
 ## Requirements
 
-a. Visual Studio 16.3+
+1. Visual Studio 16.3+
 
-b. .NET Core SDK 3.0+
+    To check the version of the installed Visual Studio go to: Help > About Visual Studio
 
-   To check the version of the installed Visual Studio go to: Help > About Visual Studio
+2. .NET Core SDK 3.0+
 
-   To check the .NET Code SDK, open the command or the powershell and type: dotnet --version
+    To check the .NET Code SDK, open the command or the powershell and type: dotnet --version
 
 ## Install .NET Core SDK
 
