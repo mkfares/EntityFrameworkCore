@@ -30,13 +30,13 @@ This tutorial is for console applications created using Visual Studio on Windows
 
 2. In the Package Manager Console (PMC) window, install the SQL Server provider package
     ```PowerShell
-    Install-Package Microsoft.EntityFrameworkCore.SqlServer
+    PM> Install-Package Microsoft.EntityFrameworkCore.SqlServer
     ```
     For ASP.NET Core apps, this package is included automatically.
 
 3. To add the PMC tools to the project, install the following package in the Package Manager Console (PMC)
     ```PowerShell
-    Install-Package Microsoft.EntityFrameworkCore.Tools
+    PM> Install-Package Microsoft.EntityFrameworkCore.Tools
     ```
     For ASP.NET Core apps, this package is included automatically.
 
@@ -77,10 +77,10 @@ This tutorial is for console applications created using Visual Studio on Windows
 ## Create the Database
 
 1. To create the database, run the following commands in the Package Manager Console (PMC)
-        ```PowerShell
-        Add-Migration Initial
-        Update-Database
-        ```
+    ```PowerShell
+    PM> Add-Migration Initial
+    PM> Update-Database
+    ```
 
 2. Verify that the database CompanyDatabase is created under SQL Server > (localdb)\MSSQLLocalDB > Databases, you may need to refresh the Databases folder.
 
