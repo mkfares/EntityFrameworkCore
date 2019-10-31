@@ -43,3 +43,50 @@ This tutorial is for console applications created using Visual Studio on Windows
 4. Check that the packages are available under Dependencies > Packages in the Solution Explorer window.
 
 5. Build and Run your project (Debug > Start Without Debugging or Ctrl+F5)
+
+## Create the Models (Entities) and Content
+
+1. Add the following class to your project
+    ```C#
+    class Employee
+    {
+        public int EmployeeId { get; set; }
+        public string Name { get; set; }
+    }
+    ```
+2. Add to your project the class CompanyContext which represents the database context.
+    ```C#
+    using Microsoft.EntityFrameworkCore;
+    ...
+    
+    class CompanyContext : DbContext
+    {
+        public DbSet<Employee> Employees { get; set; }
+        
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+            Options.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=CompanyDatabase;Trusted_Connection=True;");
+        }
+    }
+    ```
+    Note: You need to use the entity framework core package to make DbContext available.
+    
+    3. Build your project to check for errors.
+    
+    ## Create the Database
+    
+    1. To create the database, run the following commands in the Package Manager Console (PMC)
+        ```PowerShell
+        Add-Migration Initial
+        Update-Database
+        ```
+    2. Verify that the database CompanyDatabase is created under SQL Server > (localdb)\MSSQLLocalDB > Databases, you may need to refresh the Databases folder.
+    
+    ## Perform CRUD Operations on the Database
+    
+    1. Include the following code in the Main() method in the Program.cs file
+        ```C#
+        ```
+    2. Run the application and check the output.
+    
+    3. Check the content of table Employee in the database.
