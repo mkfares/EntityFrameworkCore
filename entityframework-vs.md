@@ -79,6 +79,7 @@ This tutorial is for console applications created using Visual Studio on Windows
 1. To create the database, run the following commands in the Package Manager Console (PMC)
     ```PowerShell
     PM> Add-Migration Initial
+    
     PM> Update-Database
     ```
 
@@ -158,6 +159,6 @@ This tutorial is for console applications created using Visual Studio on Windows
     }
     ```
 
-2. Run the application and check for the output.
+2. Run the application and check the output.
 
-3. To check content of the database, you may run the application with debugging (F5) and use breakpoints.
+3. To check the content of the database, you may run the application in debugging mode (F5) and use breakpoints.
