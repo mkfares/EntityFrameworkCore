@@ -73,20 +73,20 @@ This tutorial is for console applications created using Visual Studio on Windows
     
     3. Build your project to check for errors.
     
-    ## Create the Database
+## Create the Database
     
-    1. To create the database, run the following commands in the Package Manager Console (PMC)
+1. To create the database, run the following commands in the Package Manager Console (PMC)
         ```PowerShell
         Add-Migration Initial
         Update-Database
         ```
-    2. Verify that the database CompanyDatabase is created under SQL Server > (localdb)\MSSQLLocalDB > Databases, you may need to refresh the Databases folder.
+2. Verify that the database CompanyDatabase is created under SQL Server > (localdb)\MSSQLLocalDB > Databases, you may need to refresh the Databases folder.
     
-    ## Perform CRUD Operations on the Database
+## Perform CRUD Operations on the Database
     
-    1. Include the following code in the Main() method in the Program.cs file
+1. Include the following code in the Main() method in the Program.cs file
         ```C#
         ```
-    2. Run the application and check the output.
+2. Run the application and check for the output.
     
-    3. Check the content of table Employee in the database.
+3. To check content of the database, you may run the application with debugging (F5) and use breakpoints.
