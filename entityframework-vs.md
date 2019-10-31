@@ -33,7 +33,7 @@ This tutorial is for console applications created using Visual Studio on Windows
     Install-Package Microsoft.EntityFrameworkCore.SqlServer
     ```
     For ASP.NET Core apps, this package is included automatically.
-    
+
 3. To add the PMC tools to the project, install the following package in the Package Manager Console (PMC)
     ```PowerShell
     Install-Package Microsoft.EntityFrameworkCore.Tools
@@ -54,11 +54,12 @@ This tutorial is for console applications created using Visual Studio on Windows
         public string Name { get; set; }
     }
     ```
+
 2. Add to your project the class CompanyContext which represents the database context.
     ```C#
     using Microsoft.EntityFrameworkCore;
     ...
-    
+
     class CompanyContext : DbContext
     {
         public DbSet<Employee> Employees { get; set; }
@@ -70,23 +71,25 @@ This tutorial is for console applications created using Visual Studio on Windows
     }
     ```
     Note: You need to use the entity framework core package to make DbContext available.
-    
-    3. Build your project to check for errors.
-    
+
+3. Build your project to check for errors.
+
 ## Create the Database
-    
+
 1. To create the database, run the following commands in the Package Manager Console (PMC)
         ```PowerShell
         Add-Migration Initial
         Update-Database
         ```
+
 2. Verify that the database CompanyDatabase is created under SQL Server > (localdb)\MSSQLLocalDB > Databases, you may need to refresh the Databases folder.
-    
+
 ## Perform CRUD Operations on the Database
     
 1. Include the following code in the Main() method in the Program.cs file
         ```C#
         ```
+
 2. Run the application and check for the output.
-    
+
 3. To check content of the database, you may run the application with debugging (F5) and use breakpoints.
