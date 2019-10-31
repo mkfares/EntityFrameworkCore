@@ -40,4 +40,6 @@ b. .NET Core SDK 3.0+
     ```
     For ASP.NET Core apps, this package is included automatically.
 
-4. Build and Run your project (Debug > Start Without Debugging or Ctrl+F5)
+4. Check that the packages are available under Dependencies > Packages in the Solution Explorer window.
+
+5. Build and Run your project (Debug > Start Without Debugging or Ctrl+F5)
