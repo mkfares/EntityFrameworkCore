@@ -12,7 +12,7 @@ This tutorial is for console applications created using Visual Studio on Windows
 
 ## Install .NET Core SDK
 
-1. [Downaload the package by clicking on Download .NET Core SKD](https://dotnet.microsoft.com/download)
+1. [Downaload the package by clicking on Download .NET Core SDK](https://dotnet.microsoft.com/download)
 
 2. Install the package on your computer
 
