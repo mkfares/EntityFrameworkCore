@@ -9,6 +9,7 @@ In this tutorial, you will create a console application using Visual Studio on W
 2. .NET Core SDK 3.0+
 
     To check the .NET Code SDK, open the command or the powershell and type: 
+    
     ```PowerShell
     $ dotnet --version
     ```
@@ -32,12 +33,14 @@ In this tutorial, you will create a console application using Visual Studio on W
 1. Select **Tools > NuGet Package Manager > Package Manager Console** (or Ctrl+Q then type console)
 
 2. In the Package Manager Console (PMC) window, install the SQL Server provider package
+
     ```PowerShell
     PM> Install-Package Microsoft.EntityFrameworkCore.SqlServer
     ```
     For ASP.NET Core apps, this package is included automatically.
 
 3. To add the PMC tools to the project, install the following package in the Package Manager Console (PMC)
+
     ```PowerShell
     PM> Install-Package Microsoft.EntityFrameworkCore.Tools
     ```
@@ -50,6 +53,7 @@ In this tutorial, you will create a console application using Visual Studio on W
 ## Create the Models (Entities) and Context
 
 1. Add the following class to your project
+
     ```C#
     class Employee
     {
@@ -60,6 +64,7 @@ In this tutorial, you will create a console application using Visual Studio on W
     ```
 
 2. Add to your project the class CompanyContext which represents the database context
+
     ```C#
     using Microsoft.EntityFrameworkCore;
     ...
@@ -76,6 +81,7 @@ In this tutorial, you will create a console application using Visual Studio on W
         }
     }
     ```
+    
     Note: You need to use the entity framework core package to make DbContext available
 
 3. Build your project to check for errors
@@ -83,6 +89,7 @@ In this tutorial, you will create a console application using Visual Studio on W
 ## Create the Database
 
 1. To create the database, run the following commands in the Package Manager Console (PMC)
+
     ```PowerShell
     PM> Add-Migration Initial
     
@@ -94,6 +101,7 @@ In this tutorial, you will create a console application using Visual Studio on W
 ## Perform CRUD Operations on the Database
     
 1. Include the following code in the Main() method in the Program.cs file
+
     ```C#
     using System;
     using System.Linq;
