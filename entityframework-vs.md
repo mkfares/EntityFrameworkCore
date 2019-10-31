@@ -16,3 +16,26 @@ b. .NET Core SDK 3.0+
 
 2. Install the package on your computer
 
+## Create Console Project
+
+1. Open Visual Studio and Create Console Project using the Console App (.NET Core) template
+
+2. Provide a name to your project (i.e., ConsoleApp)
+
+3. Build and Run your project (Debug > Start Without Debugging or Ctrl+F5)
+
+## Add Entity Framework Core to the Project
+
+1. Select Tools > NuGet Package Manager > Package Manager Console (or Ctrl+Q then type console)
+
+2. In the Package Manager Console (PMC) window, type the command to add the SQL Server provider to the project
+    ```PowerShell
+    Install-Package Microsoft.EntityFrameworkCore.SqlServer
+    ```
+    For ASP.NET Core apps, this package is included automatically
+    
+3. To add the PMC tools to the project, install the following package in the Package Manager Console (PMC)
+    ```PowerShell
+    Install-Package Microsoft.EntityFrameworkCore.Tools
+    ```
+    For ASP.NET Core apps, this package is included automatically.
