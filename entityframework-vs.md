@@ -28,14 +28,16 @@ b. .NET Core SDK 3.0+
 
 1. Select Tools > NuGet Package Manager > Package Manager Console (or Ctrl+Q then type console)
 
-2. In the Package Manager Console (PMC) window, type the command to add the SQL Server provider to the project
+2. In the Package Manager Console (PMC) window, install the SQL Server provider package
     ```PowerShell
     Install-Package Microsoft.EntityFrameworkCore.SqlServer
     ```
-    For ASP.NET Core apps, this package is included automatically
+    For ASP.NET Core apps, this package is included automatically.
     
 3. To add the PMC tools to the project, install the following package in the Package Manager Console (PMC)
     ```PowerShell
     Install-Package Microsoft.EntityFrameworkCore.Tools
     ```
     For ASP.NET Core apps, this package is included automatically.
+
+4. Build and Run your project (Debug > Start Without Debugging or Ctrl+F5)
