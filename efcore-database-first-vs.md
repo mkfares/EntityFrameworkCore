@@ -64,19 +64,30 @@ In this tutorial, you will create a console application using Visual Studio, the
 
 ## Create Model and Context from Existing Database
 
-1. Create a folder named Data under your project root folder
+1. Open the Package Manager Console (PMC) (Tools > NuGet Package Manager > Package Manager Console)
 
-2. Open the Package Manager Console (PMC) (Tools > NuGet Package Manager > Package Manager Console)
-
-3. Run the following command to scaffold the model
+2. Run the following command to scaffold the model
     
     ```PowerShell
-    PM> Scaffold-DbContext "Server=(localdb)\MSSQLLocalDB;Database=UniversityDatabase;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -ContextDir Data -Context UniversityDbContext -DataAnnotations -UseDatabaseNames -Force
+    PM> Scaffold-DbContext "Server=(localdb)\MSSQLLocalDB;Database=UniversityDatabase;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Data -ContextDir Data -Context UniversityDbContext -DataAnnotations -UseDatabaseNames -Force
     ```
     
-4. Inspect the created classes (entities) and context in the Data folder
+3. Inspect the Department, Student, and UniversityDbContext classes located in the Data folder
 
-4. Build and run the project
+4. To test that your app is linked to the database, add the following code inside the Main() method.
+
+    ```C#
+    using MyApp.Data;   // Need to add the namespace of the UniversityDbContext class
+    
+    using (var context = new UniversityDbContext())
+    {
+        foreach (var dept in context.Department)
+        {
+            Console.WriteLine($"Id: {dept.DepartmentId} - Name: {dept.Name}");
+        }
+    }
+    ```
+5. Build and run the project
 
 ## Database Migrations
 
