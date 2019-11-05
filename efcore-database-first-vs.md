@@ -91,7 +91,7 @@ In this tutorial, you will create a console application using Visual Studio, the
 
 ## Database Migrations
 
-1. Update the database
+1. Update the model
 
 2. Add migration to the database
 
