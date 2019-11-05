@@ -1,4 +1,4 @@
-In this tutorial, you will create a console application using Visual Studio, then link this to an existing database using entity framework core. The model is generated from the database using dbcontext scaffolding.
+In this tutorial, you will create a console application using Visual Studio, then link this app to an existing database using Entity Framework Core ORM. The model is generated from the database using dbcontext scaffolding. This approach of creating the model is called reverse engineering.
 
 ## Requirements
 
