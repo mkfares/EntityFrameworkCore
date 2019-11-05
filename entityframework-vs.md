@@ -22,15 +22,15 @@ In this tutorial, you will create a console application using Visual Studio on W
 
 ## Create Console Project
 
-1. Open Visual Studio and Create Console Project using the Console App (.NET Core) template
+1. Open Visual Studio and create a Console Project using the Console App (.NET Core) template
 
-2. Provide a name to your project (i.e., ConsoleApp)
+2. Provide a name for your project (e.g., ConsoleApp)
 
-3. Build and run your project using **Debug > Start Without Debugging** or Ctrl+F5
+3. Build and run your project using **Debug > Start Without Debugging** (Ctrl+F5)
 
 ## Add Entity Framework Core to the Project
 
-1. Select **Tools > NuGet Package Manager > Package Manager Console** (or Ctrl+Q then type console)
+1. Select **Tools > NuGet Package Manager > Package Manager Console** (Ctrl+Q then type console)
 
 2. In the Package Manager Console (PMC) window, install the SQL Server provider package
 
@@ -39,7 +39,7 @@ In this tutorial, you will create a console application using Visual Studio on W
     ```
     For ASP.NET Core apps, this package is included automatically.
 
-3. To add the PMC tools to the project, install the following package in the Package Manager Console (PMC)
+3. To add the PMC tools to the project, install the following package
 
     ```PowerShell
     PM> Install-Package Microsoft.EntityFrameworkCore.Tools
@@ -48,9 +48,9 @@ In this tutorial, you will create a console application using Visual Studio on W
 
 4. Check that the packages are available under **Dependencies > Packages** in the Solution Explorer window
 
-5. Build then run your project (Debug > Start Without Debugging or Ctrl+F5)
+5. Build then run your project using **Debug > Start Without Debugging** (Ctrl+F5)
 
-## Create the Models (Entities) and Context
+## Create Models (Entities) and Database Context
 
 1. Add the following class to your project
 
@@ -63,7 +63,7 @@ In this tutorial, you will create a console application using Visual Studio on W
     }
     ```
 
-2. Add to your project the class CompanyContext which represents the database context
+2. Add to your project a class named CompanyContext which represents the database context
 
     ```C#
     using Microsoft.EntityFrameworkCore;
@@ -82,13 +82,13 @@ In this tutorial, you will create a console application using Visual Studio on W
     }
     ```
     
-    Note: You need to use the entity framework core package to make DbContext available
+    Note: You need to add "usung Microsoft.EntityFrameworkCore" statement to make DbContext class available
 
 3. Build your project to check for errors
 
 ## Create the Database
 
-1. To create the database, run the following commands in the Package Manager Console (PMC)
+1. To create the database from your model and context, run the following commands in the Package Manager Console (PMC)
 
     ```PowerShell
     PM> Add-Migration Initial
@@ -96,7 +96,7 @@ In this tutorial, you will create a console application using Visual Studio on W
     PM> Update-Database
     ```
 
-2. Verify that the database **CompanyDatabase** is created under **SQL Server > (localdb)\MSSQLLocalDB > Databases**, you may need to refresh the **Databases** folder to see the new database.
+2. Verify that the database **CompanyDatabase** is created under **SQL Server > (localdb)\MSSQLLocalDB > Databases** in the SQL Server Object Explorer window. You may need to refresh the **Databases** folder to see the new database.
 
 ## Perform CRUD Operations on the Database
     
@@ -179,6 +179,6 @@ In this tutorial, you will create a console application using Visual Studio on W
     }
     ```
 
-2. Buid then run the application, check the output
+2. Buid then run the application, check the output of the application
 
 3. To check the content of the database, you may run the application in debugging mode (F5) and use breakpoints
