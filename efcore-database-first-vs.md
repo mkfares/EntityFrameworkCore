@@ -95,5 +95,5 @@ In this tutorial, you will create a console application using Visual Studio, the
 
 2. Add migration to the database
 
-3. Update the model and the database
+3. Update the database
 
