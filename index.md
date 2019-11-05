@@ -1,3 +1,5 @@
 Database Programming Tutorials
 
-1. [Link a database to a console app using entity framework core on Visual Studio](efcore-code-first-vs.md)
+1. [Entity Framework core - Code First](efcore-code-first-vs.md)
+
+2. [Entity Framework Core - Existing Database](efcore-database-first-vs.md)
