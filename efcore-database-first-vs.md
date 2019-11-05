@@ -54,7 +54,7 @@ In this tutorial, you will create a console application using Visual Studio, the
 
 1. Open the **SQL Server Object Explorer** window from the view menu in Visual Studio, then expand the SQL Server, then select the **(localdb)\MSSQLLocalDB** instance. Click on **New Query** icon on the top of the SQL Server Object Explorer window, A new query editor window will open.
 
-2. Paste the content of the file (UniversityDatabase.sql)[UniversityDatabase.sql] in the Query Editor window
+2. Paste the content of the file [UniversityDatabase.sql](UniversityDatabase.sql) in the Query Editor window
 
 3. Click on the green arrow on the top left of the Query Editor window or press Ctrl+Shift+E to execute the SQL code.
 
