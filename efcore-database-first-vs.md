@@ -52,13 +52,13 @@ In this tutorial, you will create a console application using Visual Studio, the
 
 ## Create the Database on LocalDB instance
 
-1. Open the **SQL Server Object Explorer** window from the view menu in Visual Studio, then expand the SQL Server, then select the (localdb)\MSSQLLocalDB instance. Click on New Query icon in the top of the SQL Server Object Explorer windowm which will open a new query editor window.
+1. Open the **SQL Server Object Explorer** window from the view menu in Visual Studio, then expand the SQL Server, then select the **(localdb)\MSSQLLocalDB** instance. Click on **New Query** icon on the top of the SQL Server Object Explorer window, A new query editor window will open.
 
-2. Paste the content of the file (UniversityDatabase.sql)[UniversityDatabase.sql] in the query editor window
+2. Paste the content of the file (UniversityDatabase.sql)[UniversityDatabase.sql] in the Query Editor window
 
-3. Click on the green arrow on the top left of the query editor window or press Ctrl+Shift+E to execute the SQL code.
+3. Click on the green arrow on the top left of the Query Editor window or press Ctrl+Shift+E to execute the SQL code.
 
-4. The UniversityDatabase database should be created with Department and Student tables. If the database does not show, right-click on Databases folder in the SQL Server Object Explorer then select refresh.
+4. The UniversityDatabase database should be created. If the database does not show up, right-click on the Databases folder in SQL Server Object Explorer window then select refresh.
 
 5. Inspect the tables, columns, and the data in the University Database
 
@@ -74,7 +74,7 @@ In this tutorial, you will create a console application using Visual Studio, the
     
 3. Inspect the Department, Student, and UniversityDbContext classes located in the Data folder
 
-4. To test that your app is linked to the database, add the following code inside the Main() method.
+4. To test that the app is linked to the database, add the following code to the Main() method.
 
     ```C#
     using MyApp.Data;   // Need to add the namespace of the UniversityDbContext class
