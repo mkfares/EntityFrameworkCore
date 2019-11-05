@@ -65,7 +65,7 @@ In this tutorial, you will create a console application using Visual Studio on W
 
 2. Add to your project a class named CompanyContext which represents the database context
 
-    ```
+    ```C#
     using Microsoft.EntityFrameworkCore;
     ...
 
