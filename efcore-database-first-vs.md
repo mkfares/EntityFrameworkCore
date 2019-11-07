@@ -91,9 +91,29 @@ In this tutorial, you will create a console application using Visual Studio, the
 
 ## Database Migrations
 
-1. Update the model
+1. Update the data model
+
+    Add the following property to the Student class
+    
+    ```C#
+    public double Gpa { get; set; }
+    ```
 
 2. Add migration to the database
 
+    In the Package Manager Console window, type the command:
+    
+    ```PowerShell
+    PM> Add-Migration Add-Student-Gpa
+    ```
+    
+    The Add-Student-Gpa is the name of the migration.
+    
 3. Update the database
+
+    Apply the pending migrations to the database schema.
+    
+    ```PowerShell
+    PM> Update-Database
+    ```
 
