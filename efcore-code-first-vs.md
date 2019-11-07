@@ -75,7 +75,7 @@ In this tutorial, you will create a console application using Visual Studio on W
         
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=CompanyDatabase;Trusted_Connection=True;";
+            string connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=CompanyDatabase;Trusted_Connection=True;";
             
             options.UseSqlServer(connectionString);
         }
