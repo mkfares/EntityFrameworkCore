@@ -104,10 +104,10 @@ In this tutorial, you will create a console application using Visual Studio, the
     In the Package Manager Console window, type the command:
     
     ```PowerShell
-    PM> Add-Migration Add-Student-Gpa
+    PM> Add-Migration AddStudentGpa
     ```
     
-    The Add-Student-Gpa is the name of the migration.
+    The AddStudentGpa is the name of the migration.
     
 3. Update the database
 
