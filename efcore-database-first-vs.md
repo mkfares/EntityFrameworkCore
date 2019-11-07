@@ -64,9 +64,9 @@ In this tutorial, you will create a console application using Visual Studio, the
 
 ## Create Model and Context from Existing Database
 
-1. Open the Package Manager Console (PMC) (Tools > NuGet Package Manager > Package Manager Console)
+1. Open the Package Manager Console (PMC) from Tools > NuGet Package Manager > Package Manager Console
 
-2. Run the following command to scaffold the model
+2. Run the following command to generate the data model
     
     ```PowerShell
     PM> Scaffold-DbContext "Server=(localdb)\MSSQLLocalDB;Database=UniversityDatabase;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Data -ContextDir Data -Context UniversityDbContext -DataAnnotations -UseDatabaseNames -Force
