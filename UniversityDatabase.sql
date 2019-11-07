@@ -12,7 +12,7 @@ GO
 
 -- Create the Employee table
 CREATE TABLE Student (
-    EmployeeId INT IDENTITY(1,1) PRIMARY KEY,
+    StudentId INT IDENTITY(1,1) PRIMARY KEY,
     Name NVARCHAR(100) NOT NULL,
     DepartmentId INT,
     FOREIGN KEY (DepartmentId) REFERENCES Department(DepartmentId)
