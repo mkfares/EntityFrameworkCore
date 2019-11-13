@@ -32,14 +32,14 @@ In this tutorial, you will create a console application using Visual Studio on W
 
 1. Select **Tools > NuGet Package Manager > Package Manager Console** (Ctrl+Q then type console)
 
-2. In the Package Manager Console (PMC) window, install the SQL Server provider package
+2. Install the SQL Server provider package in the Package Manager Console (PMC) window 
 
     ```PowerShell
     PM> Install-Package Microsoft.EntityFrameworkCore.SqlServer
     ```
     For ASP.NET Core apps, this package is included automatically.
 
-3. To add the PMC tools to the project, install the following package
+3. Add the Package Manager Console tools to the project by installing the following package
 
     ```PowerShell
     PM> Install-Package Microsoft.EntityFrameworkCore.Tools
