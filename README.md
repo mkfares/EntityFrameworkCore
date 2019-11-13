@@ -4,4 +4,4 @@ This repository contains tutorials on using database with a console application.
 
 [Code First](efcore-code-first-vs.md)
 
-[Existing Database]()
+[Existing Database](efcore-database-first-vs.md)
