@@ -1,3 +1,5 @@
+This tutorial allows you to link an existing Product Database to a console application, then perform LINQ queries on the database.
+
 ## Create Console Project
 
 1. Open Visual Studio and create a Console Project using the Console App (.NET Core) template
