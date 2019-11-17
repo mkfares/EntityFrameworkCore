@@ -5,3 +5,4 @@ This repository contains tutorials on using entity framework core in a console a
 [Code First](efcore-code-first-vs.md)
 
 [Database First](efcore-database-first-vs.md)
+[Linq Query Tutorial]()
